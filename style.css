@@ -1,0 +1,148 @@
+* {
+    font-family: 'Inter';
+    line-height: 150%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #f3f5fc;
+}
+
+.logo {
+    padding-top: 10px;
+    margin-left: 10px;
+    width: 10%;
+}
+
+main {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 2%;
+    min-height: 60vh;
+}
+
+.section1 {
+    width: 60%;
+    height: 100%;
+}
+
+.text-area {
+    border: none;
+    color: #0A3871;
+    margin-top: 20px;
+    text-transform: lowercase;
+    resize: none;
+    width: 70vh;
+    height: 30vh;
+    padding: 0;
+    cursor: pointer;
+}
+
+::placeholder {
+    color: #0A3871;
+}
+
+.text-area:focus {
+    outline: none;
+}
+
+.section2 {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 32px;
+    flex-direction: column;
+}
+
+.mensaje {
+    background: white;
+    border: none;
+    outline: none;
+    resize: none;
+    border-radius: 24px;
+    color: #0A3871;
+    padding-left: 15px;
+    width: 40vh;
+    height: 60vh;
+}
+
+.mensaje:focus {
+    outline: none;
+}
+
+.botones {
+    display: flex;
+    margin-top: 18px;
+    position: relative;
+    justify-content: space-around;
+}
+
+.btn-desencriptar {
+    background: #d8dfe8;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    color: #0A3871;
+    cursor: pointer;
+    height: 67px;
+    margin-left: 30px;
+    width: 30%;
+}
+
+.btn-encriptar {
+    background-color: #0A3871;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    color: white;
+    cursor: pointer;
+    height: 67px;
+    width: 30%;
+}
+
+.btn-copiar {
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    color: #0A3871;
+    cursor: pointer;
+    height: 67px;
+    width: 30%;
+}
+
+.Informacion {
+    color: #495057;
+    font-size: 18px;
+}
+
+.footer {
+    text-align: center;
+    padding: 10px;
+}
+
+.footer p {
+    font-size: 60%;
+    color: #0A3871;
+}
+
+.oculto{
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .text-area {
+        width: 100%;
+    }
+
+    .mensaje {
+        width: 100%;
+    }
+
+    .botones {
+        flex-direction: column;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {}
+
+@media (min-width: 1024px) {}
